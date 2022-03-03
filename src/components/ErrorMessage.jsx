@@ -1,10 +1,9 @@
-import React from 'react';
+import React from "react";
 
-export const ErrorMessage = () => {
-   return (
-       <div className='error'>
-          <p>It is impossible to find this movie 😪</p>
-       </div>
-   );
+export const ErrorMessage = ({ errorMessage }) => {
+  return (
+    <div className="error">
+      <p>{errorMessage} 😪</p>
+    </div>
+  );
 };
-

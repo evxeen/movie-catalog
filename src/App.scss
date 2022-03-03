@@ -70,16 +70,14 @@ header {
     flex-wrap: wrap;
 
     .card {
-      width: 243px;
+      width: 185px;
       border-radius: 15px;
-      height: 344px;
       margin: 0 3rem 2rem 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       background: #fafafa;
       transition: 0.3s ease;
-      box-sizing: border-box;
 
       .title {
         margin-bottom: 1rem;
@@ -90,15 +88,15 @@ header {
         display: flex;
         flex-direction: column;
         text-align: left;
-
+        margin-bottom: 10px;
       }
       &:hover {
-        transition: 0.3s ease;
         box-shadow:5px 5px 15px #a8a6a6;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
         .poster img {
           transition: 0.3s ease;
-          width: 160px;
-          height: 210px;
           box-shadow: 5px 5px 5px #a8a6a6;
         }
       }
@@ -117,14 +115,26 @@ header {
 .pagination {
   list-style: none;
 
+  img {
+    width: 10px;
+    height: 10px;
+  }
+
   li {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 5px;
     cursor: pointer;
+
+    .q {
+      color: red;
+    }
 
     &:hover {
       border-bottom: 1px solid black;
     }
+  }
+  button:last-child {
+    margin-left: 10px;
   }
 }
 
